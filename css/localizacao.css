@@ -17,13 +17,58 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 section{
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.564);
-    width: 80vw;
+    width: 75vw;
     height: 400px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
     z-index: 9;
+    padding: 20px;
 
+}
+section p{
+    font-size: 1.3em;
+    margin-top: 30px;
+    color: black;
+    animation: aparecer 1.5s linear;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.botao {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, red,black);
+    animation: brilho 1s linear  infinite;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+@keyframes brilho{
+    25%{ border-top: 1px solid white;
+        
+        
+    }
+    50%{
+        border-right: 1px solid white;
+    }
+    75%{
+        border-bottom: 1px solid white;
+    }
+    100%{
+        border-left: 1px solid white;
+    }
 }

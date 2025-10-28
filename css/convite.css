@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+.corpo{
+    position: relative;
+    background-image: linear-gradient(to top, black,red,black);
+    min-height: 90vh;
+    overflow: hidden;
+}
+.corpo h1{
+    color: white;
+    text-align: center;
+    font-family: "Condiment", cursive;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+
+}
+.corpo h1>span{
+    font-size: 1.5em;
+}
+.corpo p{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 174, 174, 0.603);
+    width: 85vw;
+    padding: 10px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-shadow: 0 0 10px white;
+    text-indent:10px;
+    font-family: "Lavishly Yours", cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+
+}
+.marcos{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    z-index: 10;
+}
+.crf{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.4;
+
+}
+.crf-branco{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+}
+.botao{
+ 
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    box-sizing: border-box;
+    
+}
+.botao a{
+    background-color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, red,black);
+    animation: brilho 1s linear  infinite;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+@keyframes brilho{
+    25%{ border-top: 1px solid white;
+        
+        
+    }
+    50%{
+        border-right: 1px solid white;
+    }
+    75%{
+        border-bottom: 1px solid white;
+    }
+    100%{
+        border-left: 1px solid white;
+    }
+}
+
+.roda-pe{
+    color: white;
+    font-size: 2em;
+    font-family: "Lavishly Yours", cursive;
+    text-align: center;
+}
